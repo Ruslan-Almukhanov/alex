@@ -1,0 +1,24 @@
+.div__input{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.div__input_i{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 25%;
+}
+.div__input_button{
+    width: 20%;
+    margin-top: 10px;
+    background-color: #fff;
+    border:1px solid aqua;
+    border-radius: 5px;
+}
+.div__input_button:hover{
+    background-color: aqua;
+    border:2px solid #fff;
+    color:#fff;
+    transition: ease 0.5s;
+}
