@@ -5,7 +5,7 @@ import Szapka from "./Szapka/Szapka";
 import Input from "./Input/Input"
 import './App.css';
 
-
+// please dont pay attention to my design
 function App() {
  return(
   <div className="App">
