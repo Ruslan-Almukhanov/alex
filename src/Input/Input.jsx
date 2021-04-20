@@ -1,14 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React , { createRef} from "react";
 import '../Input/Input.css';
 
 
 
-const Input = () =>{
+const Input = (props) =>{
+  let postFromInput = createRef();
+  let tasks = ()=> {
+    let text = postFromInput.current.value;
+    props.newPosts(text)
+     
+  }
     return(
         <div className="div__input">
-          <input className="div__input_i"></input>
-          <button className="div__input_button">add</button>
+          <input className="div__input_i" ref={postFromInput}></input>
+          <button className="div__input_button" onClick={tasks}>add</button>
         </div>
        
     )
