@@ -8,6 +8,7 @@ const Input = (props) =>{
   let tasks = ()=> {
     let text = postFromInput.current.value;
     props.newPosts(text)
+    postFromInput.current.value='';
      
   }
     return(
